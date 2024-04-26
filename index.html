@@ -19,7 +19,80 @@
 
 				<!-- Intro -->
 					<div id="intro">
-						<h1>Crafting Excellence: Welcome to The Harshal Patil Portfolio<br />
+						<h1>Explore Harshal Patil's Portfolio</h1>
+							<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open to Work</title>
+    <style>
+        /* Typewriter Effect Styles */
+        #typed-text {
+            display: inline-block;
+            border-right: .15em solid orange;
+            padding-right: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 2s steps(40, end), blink-caret .75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: orange; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Open to Work Section -->
+    <section id="open-to-work">
+        <header class="major text-center">
+            <h2>Open to Work as</h2>
+        </header>
+        <p class="text-center">
+            <span id="typed-text"></span>
+        </p>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const textArray = ["Data Analyst", "Business Analyst", "BI Analyst"];
+            let index = 0;
+            let textIndex = 0;
+            let currentText = "";
+            let letter = "";
+
+            function type() {
+                if (textIndex < textArray[index].length) {
+                    currentText = textArray[index].slice(0, ++textIndex);
+                    document.getElementById("typed-text").textContent = currentText;
+                } else {
+                    textIndex = 0;
+                    index++;
+                    if (index >= textArray.length) {
+                        index = 0;
+                    }
+                }
+                setTimeout(type, 200); // Typing speed in milliseconds
+            }
+
+            type();
+        });
+    </script>
+
+</body>
+
+</html>
+
+						
 						</h1>
 						<p>
 							</a> 
@@ -28,6 +101,7 @@
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
 					</div>
+					
 					
 				
 
@@ -49,19 +123,52 @@
 
 						<!-- Main -->
 <div id="main">
+
+	<!-- ======= Photo Section ======= -->
+<section id="photo" class="photo">
+    <div class="container text-center">
+        <img src="images/profile-pic.png" alt="Harshal Patil" class="profile-img">
+    </div>
+</section>
+<!-- End Photo Section -->
+
+<style>
+/* Center the photo */
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust this value if needed */
+}
+
+.profile-img {
+    max-width: 100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+</style>
+
+
+	 
     <!-- About Me Section -->
     <section id="about-me">
         <header class="major">
             <h2>About Me</h2>
-            <p>Hey there👋I'm Harshal Patil, a data or Business enthusiast. I adore transforming numbers into stories that guide smart choices.</p>
-            <p><strong>What Drives My Search? 🔍</strong></p>
-            <p>I'm on the lookout for roles that match my skills, challenge me, and let me make a meaningful contribution.</p>
-            <p><strong>Why Consider Me? ⬇️</strong></p>
-            <p>Passion for Practical Data Insights. I turn data into actionable insights using Excel, SQL, and Power BI.</p>
-            <p><strong>Proven Real-World Skills ?🌟</strong></p>
-            <p>Demonstrating tangible skills gained from a year of experience at Wipro, I've navigated real-world projects, showcasing my ability to excel in practical scenarios.</p>
-            <p><strong>What Makes Me Special?.🎯</strong></p>
-            <p>I easily fit into teams with my adaptability and strong analytical skills, making a quick and positive impact.</p>
+		</header>
+		<p>
+			Hey there! I'm Harshal Patil, a passionate Data Analyst/BI Analyst with over a year of experience working in a leading MNC. While I started with a mechanical engineering degree, my journey led me to discover my true passion for diving deep into data.
+		</p>
+		<p>
+			I've honed some essential skills along the way, mastering tools like Excel, SQL, and Power BI. These skills empower me to dissect data effectively and extract meaningful insights.
+		</p>
+		<p>
+			Having worked on real business projects during my time in the MNC, I've gained practical experience that showcases my ability to transform raw data into actionable insights. You can explore some of these projects in my portfolio.
+		</p>
+		<p>
+			So, why did I transition from mechanical engineering to data analysis? It's simple – I have a natural talent for identifying trends and deciphering complex data sets. In today's data-driven world, I believe in harnessing the power of data to drive business success.
+		</p>
+		<p>
+			Join me on this exciting journey as we turn raw data into transformative decisions. Let's embark on this data-filled adventure together!
+		</p>
         </header>
     </section>
 	
@@ -90,17 +197,116 @@
 			padding: 8px 12px;
 		}
 	</style>
+	<!-- ======= SAY HELLO Section ======= -->
+<section id="say-hello" class="say-hello">
+    <div class="container text-center" data-aos="fade-up">
+        <div class="visualization-effect">
+            <h2 class="section-title" id="hello-text">SAY HELLO</h2>
+        </div>
+        <div class="contact-buttons">
+			<!-- WhatsApp Button -->
+<a href="https://wa.me/+918379859689/?text=Hello%20there!" target="_blank" class="contact-button whatsapp">
+    <img src="images/whatsap.jpg" alt="WhatsApp">
+</a>
+            
+            <!-- LinkedIn (Likedini) Button -->
+           <!-- LinkedIn Button -->
+<a href="https://www.linkedin.com/in/harshal-patil-a36181208?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app&message=Hello%20there!" target="_blank" class="contact-button linkedin">
+    <img src="images/linkedin.jpg" alt="LinkedIn">
+</a>
+
+
+            <!-- Gmail Button -->
+<a href="mailto:harshalpatil1905@gmail.com" class="contact-button gmail">
+    <img src="images/mail.jpg" alt="Gmail">
+</a>
+
+        </div>
+    </div>
+</section>
+<!-- End SAY HELLO Section -->
+
+<style>
+/* Flexbox Styles */
+.say-hello {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.visualization-effect {
+    position: relative;
+}
+
+/* Typewriter Effect */
+#hello-text {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 4px;
+    animation: typing 4s steps(10, end), blink .5s step-end infinite alternate;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.visualization-effect h2 {
+    animation: fadeIn 1s ease;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contact-button {
+    margin: 0 10px;
+}
+
+.contact-button img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #007bff;
+    padding: 5px;
+    transition: transform 0.3s ease;
+}
+
+.contact-button:hover img {
+    transform: scale(1.1);
+}
+</style>
+
 	
 	<section>
 		<h2>Technical Skills</h2>
 		
 		<ul class="technical-skills">
-			<li>Advanced Excel</li>
-			<li>SQL</li>
+			<li>Excel</li>
 			<li>Power BI</li>
-			<li>Tech Documentation</li>
-			<li>Communication</li>
-			<li>Stakeholder Management</li>
+			<li>SQL</li>
+			<li>STATISTICAL KNOWLEDGE</li>
+			<li>TECH DOCUMENTATION</li>
+			<li>COMMUNICATION</li>
+			<li>STAKEHOLDER MANAGEMENT</li>
 		</ul>
 	</section>
 	
@@ -115,6 +321,8 @@
 						
 						<!-- Featured Post -->
 
+						
+
 						<article class="post featured">
 							<header class="major">
 								
@@ -127,31 +335,6 @@
 								<li><a href="https://github.com/HarshalPatil7698/Sales-and-Financial-Analytics-Using-Excel" class="button large">View Project</a></li>
 							</ul>
 						</article>
-					</article>
-					<article>
-						<header>
-							
-							<h2><a href="https://github.com/HarshalPatil7698/Customer-Service-Dashboard-Using-Excel">Customer Service Dashboard<br />
-							</a></h2>
-						</header>
-						<a href="https://github.com/HarshalPatil7698/Customer-Service-Dashboard-Using-Excel" class="image fit"><img src="images/Customer Service Dashboard.png" alt="" /></a>
-						<p>This comprehensive Excel dashboard provides a detailed overview of our customer service operations, offering insights to enhance customer satisfaction and optimize agent performance.[Excel | Pivot Tables | Data Analysis | Visualizations]</p>
-						<ul class="actions special">
-							<li><a href="https://github.com/HarshalPatil7698/Customer-Service-Dashboard-Using-Excel" class="button">View Project</a></li>
-						</ul>
-					</article>
-					
-					<article>
-						<header>
-							
-							<h2><a href="https://github.com/HarshalPatil7698/Store-Annual-Sales-Report">Store Annual Sales Report<br />
-							</a></h2>
-						</header>
-						<a href="https://github.com/HarshalPatil7698/Store-Annual-Sales-Report" class="image fit"><img src="images/Vrinda Store Annual Report 2022.png" alt="" /></a>
-						<p>Vrinda Stores want to create annual sales report for 2022,So that they can understand their customers grow more sales in 2023[Excel | Pivot Tables | Data Analysis | Visualizations]</p>
-						<ul class="actions special">
-							<li><a href="https://github.com/HarshalPatil7698/Store-Annual-Sales-Report" class="button">View Project</a></li>
-						</ul>
 					</article>
 					
 						
@@ -174,13 +357,25 @@
 								<article>
 									<header>
 										
-										<h2><a href="https://www.novypro.com/project/ecommerce-sales-dashboard-power-bi-2">ECommerce Sales Analysis<br />
+										<h2><a href="https://project.novypro.com/LbQe6i">ECommerce Sales Analysis<br />
 										</a></h2>
 									</header>
-									<a href="https://www.novypro.com/project/ecommerce-sales-dashboard-power-bi-2" class="image fit"><img src="images/Overall View_Sales Dashboard.png" alt="" /></a>
+									<a href="https://project.novypro.com/LbQe6i" class="image fit"><img src="images/Overall View_Sales Dashboard.png" alt="" /></a>
 									<p> I have done the analysis of ECommerce Sales, A US Based Ecommerce Sales Company wants to create a Sales Dashboard showing information of YTD Sales and generate insights💡 for Various scenarios.[SQL | Power BI | Power Query | DAX]</p>
 									<ul class="actions special">
-										<li><a href="https://www.novypro.com/project/ecommerce-sales-dashboard-power-bi-2" class="button">View Project</a></li>
+										<li><a href="https://project.novypro.com/LbQe6i" class="button">View Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										
+										<h2><a href="https://www.novypro.com/project/adventure-work-cycle-report">Adventure Work Cycle Report<br />
+										</a></h2>
+									</header>
+									<a href="https://www.novypro.com/project/adventure-work-cycle-report" class="image fit"><img src="images/Adventure Works.png" alt="" /></a>
+									<p>In this case I need to design and deliver an end-to-end business solution to Adventure Work Cycle🚲, a global manufacturing company. The client needs a way to track their core business KPIs (sales, revenue, profit, returns)[SQL | Power BI | Power Query | DAX]</p>
+									<ul class="actions special">
+										<li><a href="https://www.novypro.com/project/adventure-work-cycle-report" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
@@ -196,18 +391,34 @@
 									</ul>
 								</article>
 
+								
 								<article>
 									<header>
 										
-										<h2><a href="https://www.novypro.com/project/adventure-work-cycle-report">Adventure Work Cycle Report<br />
+										<h2><a href="https://github.com/HarshalPatil7698/Store-Annual-Sales-Report">Store Annual Sales Report<br />
 										</a></h2>
 									</header>
-									<a href="https://www.novypro.com/project/adventure-work-cycle-report" class="image fit"><img src="images/Adventure Works.png" alt="" /></a>
-									<p>In this case I need to design and deliver an end-to-end business solution to Adventure Work Cycle🚲, a global manufacturing company. The client needs a way to track their core business KPIs (sales, revenue, profit, returns)[SQL | Power BI | Power Query | DAX]</p>
+									<a href="https://github.com/HarshalPatil7698/Store-Annual-Sales-Report" class="image fit"><img src="images/Vrinda Store Annual Report 2022.png" alt="" /></a>
+									<p>Vrinda Stores want to create annual sales report for 2022,So that they can understand their customers grow more sales in 2023[Excel | Pivot Tables | Data Analysis | Visualizations]</p>
 									<ul class="actions special">
-										<li><a href="https://www.novypro.com/project/adventure-work-cycle-report" class="button">View Project</a></li>
+										<li><a href="https://github.com/HarshalPatil7698/Store-Annual-Sales-Report" class="button">View Project</a></li>
 									</ul>
 								</article>
+								
+								<article>
+									<header>
+										
+										<h2><a href="https://github.com/HarshalPatil7698/Customer-Service-Dashboard-Using-Excel">Customer Service Dashboard<br />
+										</a></h2>
+									</header>
+									<a href="https://github.com/HarshalPatil7698/Customer-Service-Dashboard-Using-Excel" class="image fit"><img src="images/Customer Service Dashboard.png" alt="" /></a>
+									<p>This comprehensive Excel dashboard provides a detailed overview of our customer service operations, offering insights to enhance customer satisfaction and optimize agent performance.[Excel | Pivot Tables | Data Analysis | Visualizations]</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/HarshalPatil7698/Customer-Service-Dashboard-Using-Excel" class="button">View Project</a></li>
+									</ul>
+								</article>
+								
+								<article>
 
 								<section id="projects-intro">
 									<header class="major">
